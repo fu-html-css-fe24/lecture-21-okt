@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-bg: #587291;
+    --secondary-bg: #F8F8F8;
+
+    --text-light: #fff;
+    --text-dark: #000;
+
+    --btn-primary: #5B2E48;
+
+    --font-heading: 'Laila', serif;
+    --font-text: 'Roboto', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Header / Hero */
+
+.header-content {
+    height: 100vh;
+    background-image: url('../images/get_coding.png');
+    background-size: cover;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.menu {
+    background-color: var(--secondary-bg);
+    text-align: center;
+    box-shadow: 1px 1px 21px #DCDCDC;
+    position: fixed;
+    width: 80%;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link {
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-family: var(--font-text);
+    transition: all .2s ease-in-out;
+}
+
+.link:hover {
+    background-color: #000;
+    color: var(--text-light);
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: var(--primary-bg);
+    padding: 10rem;
+    text-align: center;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.button {
+    background-color: var(--btn-primary);
+    border: none;
+    color: var(--text-light);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-family: var(--font-text);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #764762;
+}
+
+/* Footer Section */
+
+.footer-content {
+    background-color: var(--secondary-bg);
+    text-align: right;
+    padding: 3rem 1rem;
+}
+
